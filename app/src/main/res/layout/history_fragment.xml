@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#151515">
+
+    <org.eazegraph.lib.charts.PieChart
+        android:id="@+id/piechart_history"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginVertical="20dp"
+        android:layout_weight="1"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:egInnerPaddingColor="#151515"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/piechart_history">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp">
+            <View
+                android:id="@+id/view1_history"
+                android:layout_width="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/transfer_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer: "
+                android:textColor="#959595"
+                android:textSize="10pt"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp">
+            <View
+                android:id="@+id/view2_history"
+                android:layout_width="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/cashing_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cashing out: "
+                android:textColor="#959595"
+                android:textSize="10pt"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp">
+            <View
+                android:id="@+id/view3_history"
+                android:layout_width="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/market_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Market: "
+                android:textColor="#959595"
+                android:textSize="10pt"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp">
+            <View
+                android:id="@+id/view4_history"
+                android:layout_width="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/food_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food: "
+                android:textColor="#959595"
+                android:textSize="10pt"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginVertical="5dp">
+            <View
+                android:id="@+id/view5_history"
+                android:layout_width="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/electronics_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronics: "
+                android:textColor="#959595"
+                android:textSize="10pt"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="#202020"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

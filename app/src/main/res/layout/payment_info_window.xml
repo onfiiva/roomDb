@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#151515">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:backgroundTint="#202020"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"/>
+
+    <TextView
+        android:id="@+id/name_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textColor="#959595"
+        android:textSize="15pt"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_payment"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/cost_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cost"
+            android:textColor="#959595"
+            android:textSize="15pt"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_payment" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ruble_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/card_type_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card name"
+        android:textColor="#959595"
+        android:textSize="15pt"
+        android:layout_marginVertical="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_1" />
+
+    <TextView
+        android:id="@+id/card_name_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="card name"
+        android:textColor="#959595"
+        android:textSize="15pt"
+        android:layout_marginVertical="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_type_payment" />
+
+    <ImageButton
+        android:id="@+id/exit_from_payment"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/button_circle"
+        android:src="@drawable/exit_icon"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginVertical="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

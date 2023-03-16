@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tryna RoomDb</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Transfer">Transfer: %1$s</string>
+    <string name="Cashing">Cashing out: %1$s</string>
+    <string name="Market">Market: %1$s</string>
+    <string name="Food">Food: %1$s</string>
+    <string name="Electronics">Electronics: %1$s</string>
+</resources>
